@@ -1,0 +1,43 @@
+[debug] [2022-06-19T18:57:04.892Z] ----------------------------------------------------------------------
+[debug] [2022-06-19T18:57:04.894Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\Git\usr\local\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-06-19T18:57:04.894Z] CLI Version:   11.1.0
+[debug] [2022-06-19T18:57:04.894Z] Platform:      win32
+[debug] [2022-06-19T18:57:04.894Z] Node Version:  v16.15.1
+[debug] [2022-06-19T18:57:04.895Z] Time:          Mon Jun 20 2022 00:27:04 GMT+0530 (India Standard Time)
+[debug] [2022-06-19T18:57:04.895Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-19T18:57:04.961Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-19T18:57:04.962Z] > authorizing via signed-in user (singourhimanshu3@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Real Messanger
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-06-19T18:57:10.522Z] Using project from CLI flag: facebook-65d55
+[debug] [2022-06-19T18:57:10.524Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/facebook-65d55 [none]
+[debug] [2022-06-19T18:57:11.169Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/facebook-65d55 403
+[debug] [2022-06-19T18:57:11.170Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/facebook-65d55 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2022-06-19T18:57:11.171Z] HTTP Error: 403, The caller does not have permission
+[debug] [2022-06-19T18:57:11.374Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Program Files\Git\usr\local\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Program Files\Git\usr\local\node_modules\firebase-tools\lib\apiv2.js:287:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project facebook-65d55. Please make sure the project exists and your account has permission to access it.
